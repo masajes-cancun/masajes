@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Masajes Cancún | Spa urbano en el centro de Cancún</title>
-<meta name="description" content="Masajes en Cancún: relajante, descontracturante, deportivo, tailandés, balinés, tejido profundo, piedras calientes y tratamientos faciales. Spa urbano en Avenida La Luna, zona centro. Atención 24 horas. Reserva por WhatsApp.">
+<meta name="description" content="Masajes en Cancún: relajante, descontracturante, deportivo, tailandés, balinés, tejido profundo, piedras calientes y tratamientos faciales. Spa urbano en Avenida Tankah, Mercado 28, zona centro. Atención 24 horas. Reserva por WhatsApp.">
 <meta property="og:title" content="Masajes Cancún | Spa urbano en el centro de Cancún">
 <meta property="og:description" content="Masajes relajantes, descontracturantes, deportivos, de piedras calientes y tratamientos faciales. Atención 24 horas. Reserva por WhatsApp.">
 <meta property="og:type" content="website">
@@ -266,7 +266,7 @@
   .dato p, .dato a { font-family: var(--serif); font-size: 1.5rem; color: var(--azul-profundo); text-decoration: none; }
   .redes { margin-top: 8px; }
   .redes a { font-family: var(--sans); font-size: .95rem; letter-spacing: 1.5px; text-transform: uppercase; margin-right: 18px; border-bottom: 1px solid var(--arena); }
-  .mapa iframe { width: 100%; height: 100%; min-height: 360px; border: 0; border-radius: 6px; }
+  .mapa iframe { width: 100%; height: 360px; min-height: 360px; border: 0; border-radius: 6px; }
 
   footer { background: var(--azul-noche); color: #b9cfdd; text-align: center; padding: 44px 0; font-size: .9rem; }
   footer .logo { display: inline-block; margin-bottom: 8px; }
@@ -307,6 +307,13 @@
     .menu-btn { position: relative; z-index: 70; }
     .flotante { padding: 13px 18px; right: 14px; bottom: 14px; }
   }
+
+  /* HABITACIONES (videos) */
+  .habitaciones-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 300px)); gap: 28px; justify-content: center; }
+  .hab-video { margin: 0; }
+  .hab-video video { width: 100%; aspect-ratio: 9 / 16; object-fit: cover; display: block; border-radius: 14px; background: #0f2a3a; box-shadow: 14px 14px 0 var(--azul-suave); }
+  .hab-video figcaption { text-align: center; margin-top: 18px; font-family: var(--serif); font-size: 1.3rem; color: var(--azul-profundo); }
+  @media (max-width: 640px) { .habitaciones-grid { grid-template-columns: 1fr 1fr; gap: 14px; } .hab-video video { box-shadow: 8px 8px 0 var(--azul-suave); } .hab-video figcaption { font-size: 1.05rem; } }
 </style>
 </head>
 <body>
@@ -319,6 +326,7 @@
       <a href="#promociones">Promociones</a>
       <a href="#servicios">Servicios</a>
       <a href="#experiencia">Experiencia</a>
+      <a href="#habitaciones">Habitaciones</a>
       <a href="#galeria">Galería</a>
       <a href="#preguntas">Preguntas</a>
       <a href="#contacto">Contacto</a>
@@ -363,7 +371,7 @@
         <article class="promo aparecer">
           <span class="duracion">50 minutos</span>
           <h3>Masaje en pareja</h3>
-          <div class="monto">$1200</div>
+          <div class="monto">$1,200</div>
           <p class="detalle">Pesos por pareja · Incluye aromaterapia.</p>
           <a class="btn" href="https://wa.me/529983079959?text=Hola%2C%20quiero%20la%20promoci%C3%B3n%20del%20masaje%20en%20pareja%20de%2050%20minutos" target="_blank" rel="noopener">Quiero esta promo</a>
         </article>
@@ -385,7 +393,7 @@
           <div class="numero">01</div>
           <h3>Masaje relajante</h3>
           <p>Un masaje suave y envolvente para soltar el estrés del día, bajar el ritmo y descansar cuerpo y mente.</p>
-          <p class="precio">Promo del mes: $450 · 50 minutos</p>
+          <p class="precio">Promo del mes: $650 · 50 minutos</p>
         </article>
 
         <article class="tarjeta aparecer">
@@ -469,12 +477,36 @@
         <h2>Un espacio para desconectarte</h2>
         <p>Luz cálida, silencio y un trato cercano: cada sesión se adapta a lo que tu cuerpo necesita ese día.</p>
         <ul class="motivos">
-          <li><strong>Ubicación céntrica.</strong> Fácil de llegar, en la Avenida La Luna.</li>
+          <li><strong>Ubicación céntrica.</strong> Fácil de llegar, en la Avenida Tankah, junto al Mercado 28.</li>
           <li><strong>Atención 24 horas.</strong> Nos adaptamos a tu horario.</li>
           <li><strong>Variedad de servicios.</strong> Masajes y tratamientos faciales en un solo lugar.</li>
           <li><strong>Trato personalizado.</strong> Tú decides la presión y el ritmo.</li>
         </ul>
         <a class="btn btn-azul" href="https://wa.me/529983079959?text=Hola%2C%20quiero%20reservar%20un%20masaje" target="_blank" rel="noopener">Agenda tu masaje</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HABITACIONES -->
+  <section id="habitaciones" class="alt">
+    <div class="contenedor">
+      <div class="encabezado-seccion aparecer">
+        <span class="etiqueta">Nuestras habitaciones</span>
+        <h2>Conoce nuestras cabinas</h2>
+      </div>
+      <div class="habitaciones-grid aparecer">
+        <figure class="hab-video">
+          <video controls playsinline preload="none" poster="habitacion-1.jpg" aria-label="Recorrido por la nueva habitación">
+            <source src="habitacion-1.mp4" type="video/mp4">
+          </video>
+          <figcaption>Nueva habitación</figcaption>
+        </figure>
+        <figure class="hab-video">
+          <video controls playsinline preload="none" poster="habitacion-2.jpg" aria-label="Recorrido por la sala de luz suave">
+            <source src="habitacion-2.mp4" type="video/mp4">
+          </video>
+          <figcaption>Sala de luz suave</figcaption>
+        </figure>
       </div>
     </div>
   </section>
@@ -539,7 +571,7 @@
         </details>
         <details>
           <summary>¿Dónde están ubicados?</summary>
-          <p>En la Avenida La Luna, zona centro de Cancún, Quintana Roo. Abajo encontrarás el mapa.</p>
+          <p>En la Avenida Tankah, junto al Mercado 28, zona centro de Cancún, Quintana Roo. Abajo encontrarás el mapa.</p>
         </details>
         <details>
           <summary>¿Qué masaje me conviene?</summary>
@@ -547,7 +579,7 @@
         </details>
         <details>
           <summary>¿Cuáles son los precios?</summary>
-          <p>Durante todo noviembre tenemos el masaje relajante de 50 minutos en $450 y el masaje en pareja de 50 minutos en $800 pesos por pareja, con aromaterapia. Para el resto de los masajes, escríbenos por WhatsApp y te compartimos los precios.</p>
+          <p>Durante todo noviembre tenemos el masaje relajante de 50 minutos en $650 y el masaje en pareja de 50 minutos en $1,200 pesos por pareja, con aromaterapia. Para el resto de los masajes, escríbenos por WhatsApp y te compartimos los precios.</p>
         </details>
       </div>
     </div>
@@ -575,7 +607,7 @@
       <div class="contacto-grid aparecer">
         <div class="datos">
           <div class="dato"><span>WhatsApp</span><a href="https://wa.me/529983079959" target="_blank" rel="noopener">+52 998 307 9959</a></div>
-          <div class="dato"><span>Dirección</span><p>Avenida La Luna, zona centro, Cancún, Quintana Roo</p><a href="https://maps.google.com/?q=21.145800,-86.843300" target="_blank" rel="noopener" style="font-family:var(--sans);font-size:.85rem;letter-spacing:1.5px;text-transform:uppercase;border-bottom:1px solid var(--arena)">Cómo llegar</a></div>
+          <div class="dato"><span>Dirección</span><p>Avenida Tankah, Mercado 28, zona centro, Cancún, Quintana Roo</p><a href="https://maps.google.com/?q=21.158964,-86.833801" target="_blank" rel="noopener" style="font-family:var(--sans);font-size:.85rem;letter-spacing:1.5px;text-transform:uppercase;border-bottom:1px solid var(--arena)">Cómo llegar</a></div>
           <div class="dato"><span>Horario</span><p>Abierto las 24 horas</p></div>
           <p style="margin:8px 0 22px"><a class="btn" href="https://wa.me/529983079959?text=Hola%2C%20quiero%20reservar%20un%20masaje" target="_blank" rel="noopener" style="font-family:var(--sans);font-size:.88rem">Escríbenos por WhatsApp</a></p>
           <div class="redes">
@@ -589,7 +621,7 @@
             title="Ubicación de Masajes Cancún"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps?q=21.145800,-86.843300&z=17&output=embed">
+            src="https://www.google.com/maps?q=21.158964,-86.833801&z=17&output=embed">
           </iframe>
         </div>
       </div>
@@ -617,7 +649,7 @@
 <footer>
   <div class="contenedor">
     <a href="#inicio" class="logo">Masajes Cancún</a>
-    <p>Avenida La Luna, zona centro, Cancún, Q. Roo · © <span id="anio"></span></p>
+    <p>Avenida Tankah, Mercado 28, zona centro, Cancún, Q. Roo · © <span id="anio"></span></p>
   </div>
 </footer>
 
